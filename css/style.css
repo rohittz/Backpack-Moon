@@ -105,20 +105,29 @@ button .buynow {
     grid-template-columns: 1fr;
 }
 .feature{
+    height:150px;
     border:2px solid rgb(212, 207, 207);
     border-radius:20px;
     margin:20px;
     padding:3%;
     display:flex;
+    justify-content: flex-start;
 }
-.feature img{
+.feature-logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature-logo img{
     width:78px;
     height:82px;
-    margin:auto;
 }
 .about-feature{
     margin-left:25px;
-    padding-right:15px;
+    padding-right:10%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
 }
 .about-feature p{
     font-size:19px;
@@ -133,6 +142,9 @@ button .buynow {
 @media (max-width: 992px){
     .text-sec h1{
         font-size:60px;
+    }
+    .features{
+        grid-template-columns: 1fr;
     }
 }
 @media (max-width: 768px) {
@@ -150,5 +162,18 @@ button .buynow {
     }
     .features{
         grid-template-columns: 1fr;
+    }
+    .about-feature p{
+        font-size:15px;
+    }
+    .about-feature h1{
+        font-size:15px;
+    }
+    .feature-logo img{
+        width:68px;
+        height:72px;
+    }
+    .feature{
+        height:120px;
     }
 }
