@@ -105,4 +105,7 @@ button .buynow {
     .image-sec{
         padding-top:50px;
     }
+    .navbar img{
+        width: 180px;
+    }
 }
