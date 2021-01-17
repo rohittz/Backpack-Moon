@@ -157,7 +157,7 @@ button .buynow {
 }
 
 /* Card section */
-.casual h1, .travel h1{
+.casual h1, .travel h1, .contacts h1{
     color:#2A1E59;
     font-weight:bolder;
     margin:50px 0 30px 0;
@@ -170,7 +170,7 @@ button .buynow {
     background-color:#f1f1f1;
     border-radius:20px;
     padding:30px;
-    margin:15px;
+    margin:20px;
 }
 .card-body h3{
     font-size:21px;
@@ -199,6 +199,85 @@ button .buynow {
     font-weight:bold;
     color:#76C27E;
 }
+/* contacts */
+.medium{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+/* text-links */
+.text-link p{
+    font-size:29px;
+}
+.left-med{
+    display:flex;
+    align-items:center;
+}
+/* icons */
+.icons{
+    background-color:rgba(193, 202, 226, 0.836);
+    padding:20px;
+    display:flex;
+    width:1fr;
+    justify-content:center;
+    column-gap:10px;
+    border-radius:20px;
+}
+.icon{
+    width:60px;
+    height:60px;
+    border-radius:60px;
+    background-color:rgb(42, 30, 89);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.icon i{
+    color:white;
+    font-size:29px;
+}
+.direct-message{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:30px;
+}
+input{
+    border:0;
+    width:80%;
+    background-color:#2A1E59;
+    border-radius:20px;
+    padding-left:10px;
+    height:40px;
+    caret-color:white;
+    color:white;
+}
+textarea{
+    border-radius:20px;
+    border:4px solid #2a1e5960;
+    padding:20px;
+    width:400px;
+    height:200px;
+}
+/* Changing the placeholder color */
+::placeholder{
+    color:rgb(207, 207, 207);
+}
+form{
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-flow:column wrap;
+}
+.send i{
+    color:#2A1E59;
+}
+.send{
+    /* margin-top:20px; */
+    margin:20px auto;
+    background-color:#87809c8a;
+    /* border:2px solid #2a1e598a; */
+}
+/* hover */
 
 /* Small devices (tablets, 768px and up) */
 
@@ -210,8 +289,8 @@ button .buynow {
         grid-template-columns: 1fr;
     }
     .nav-border {
-        border-bottom: 4px solid rgba(128, 128, 128, 0.849);
-        border-radius: 20px;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.849);
+        /* border-radius: 20px; */
     }
     button .buynow h3{
         font-size:15px;
@@ -227,6 +306,16 @@ button .buynow {
         font-size:20px;
         margin-right:10px;
     }
+    .medium{
+        grid-template-columns: 1fr;
+    }
+    .direct-message{
+        margin-top:50px;
+        grid-row:3/1;
+    }
+    .left-med{
+        margin-top:50px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -234,7 +323,7 @@ button .buynow {
         grid-template-columns: 1fr;
     }
     .text-sec h1 {
-        font-size: 65px;
+        font-size: 55px;
     }
     .image-sec {
         padding-top: 50px;
