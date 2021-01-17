@@ -15,7 +15,9 @@
     /* border:1px solid gray; */
     width: 220px;
 }
-
+.bg{
+    background-color:white;
+}
 /* Centering the menu icon for smaller screen */
 
 .menu {
@@ -147,7 +149,11 @@ button .buynow {
         grid-template-columns: 1fr;
     }
     .about-feature h1{
-        
+
+    }
+    .nav-border{
+        border-bottom:4px solid rgba(128, 128, 128, 0.849);
+        border-radius:20px;
     }
 }
 @media (max-width: 768px) {
@@ -171,6 +177,12 @@ button .buynow {
         justify-content: center;
         align-items:center;
         height:auto;
+    }
+    .feature-image{
+        /* Tricky! Changing the order */
+        grid-row:3/1;
+        margin-top:50px;
+        margin-bottom:50px;
     }
     .about-feature{
         align-items: center;
