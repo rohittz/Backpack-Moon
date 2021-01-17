@@ -146,6 +146,9 @@ button .buynow {
     .features{
         grid-template-columns: 1fr;
     }
+    .about-feature h1{
+        
+    }
 }
 @media (max-width: 768px) {
     .top-sec {
@@ -163,17 +166,14 @@ button .buynow {
     .features{
         grid-template-columns: 1fr;
     }
-    .about-feature p{
-        font-size:15px;
-    }
-    .about-feature h1{
-        font-size:15px;
-    }
-    .feature-logo img{
-        width:68px;
-        height:72px;
-    }
     .feature{
-        height:120px;
+        flex-flow:column wrap;
+        justify-content: center;
+        align-items:center;
+        height:auto;
+    }
+    .about-feature{
+        align-items: center;
+        text-align: center;
     }
 }
