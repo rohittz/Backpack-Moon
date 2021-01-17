@@ -1,0 +1,107 @@
+#user-style {
+    font-family: 'PT Sans', sans-serif;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 20px;
+    /* font-family:'Ubuntu', sans-serif; */
+}
+
+.navbar img {
+    /* border:1px solid gray; */
+    width: 220px;
+}
+
+/* Centering the menu icon for smaller screen */
+
+.menu {
+    width: 50px;
+    height: 40px;
+    margin: auto 0;
+}
+
+.top-sec {
+    display: grid;
+    margin-top:5%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.text-sec {
+    /* border: 1px solid gray; */
+    padding-right:20%;
+}
+
+.text-sec h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #2A1E59;
+    font-weight: bolder;
+    font-size: 75px;
+}
+
+.text-sec span {
+    color: #76C27E;
+}
+
+.image-sec {
+    /* border: 1px solid gray; */
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.group-image {
+    width: 85%;
+}
+
+button .buynow img {
+    width: 30px;
+}
+
+button .buynow h3 {
+    /* margin-left:15px; */
+    font-size: 1em;
+    font-weight: bolder;
+    margin: auto 10px;
+    /* border:1px solid white; */
+}
+
+button {
+    width: 170px;
+    height: 60px;
+    background-color: #2A1E59;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+button .buynow {
+    display: flex;
+    justify-content: center;
+    /* align-items:center; */
+}
+
+.image-sec img {
+    width: 100%;
+}
+/* Small devices (tablets, 768px and up) */
+
+@media (max-width: 992px){
+    .text-sec h1{
+        font-size:60px;
+    }
+}
+@media (max-width: 768px) {
+    .top-sec {
+        grid-template-columns: 1fr;
+    }
+    .text-sec h1{
+        font-size:65px;
+    }
+    .image-sec{
+        padding-top:50px;
+    }
+}
